@@ -37,6 +37,7 @@ jupyter
 jupytext
 pyspark>=3.0.0
 java # v11+
+git+https://github.com/GDITHealth/pysoma # Basic Spark functionality included
 ```
 
 ## Setting up pyspark
