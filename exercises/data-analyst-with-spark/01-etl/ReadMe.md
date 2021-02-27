@@ -1,12 +1,11 @@
 # CSV ETL to Parquet
 
-- No additional packaging should be installed.
 - Utilize `spark_getOrCreate` for a PySpark Session. An example is provided in `starter_file.py`
 - Develop any Python / PySpark code which accomplishes the objectives listed below.
   - You may develop a local module such as the provided `mod.py` if necessary.
   - You're free to develop any number of scripts and modules and address the problem to the best of your judgement.
 - Include instructions detailing how to run your code.
-- Only commit your code.
+- Do not commit the parquet files.
 
 ## Goal
 
@@ -15,7 +14,7 @@
    2. `claims.gold.parquet`
    3. `beneficiary_demographics.bronze.parquet`
    4. `beneficiary_demographics.gold.parquet`
-- `bronze` tables seek to maintain as close to source formatting as possible, but stored in the `parquet` format.
+- `bronze` tables maintain as close to source formatting as possible stored in the `parquet` format.
 - `gold` tables contain the final version of the data ready for downstream analysts.
 
 ## Bronze Tables
