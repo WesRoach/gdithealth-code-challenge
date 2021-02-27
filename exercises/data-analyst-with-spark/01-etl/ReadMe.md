@@ -1,38 +1,38 @@
 # CSV ETL to Parquet
 
-- Utilize `spark_getOrCreate` for a PySpark Session. An example is provided in `starter_file.py`
-- Develop any Python / PySpark code which accomplishes the objectives listed below.
-  - You may develop a local module such as the provided `mod.py` if necessary.
-  - You're free to develop any number of scripts and modules and address the problem to the best of your judgement.
+- Utilize `spark_getOrCreate` for a PySpark Session. Example provided in `starter_file.py`.
+- Write Python / PySpark.
+  - Develop a local module such as `mod.py` if necessary.
+  - Develop any number of scripts and modules to address the problem.
 - Include instructions detailing how to run your code.
-- Do not commit the parquet files.
+- Do not commit Parquet data.
 
 ## Goal
 
-- Create four `parquet` outputs within the `parquet` directory.
+- Create four Parquet outputs within the `./parquet/` directory.
    1. `claims.bronze.parquet`
    2. `claims.gold.parquet`
    3. `beneficiary_demographics.bronze.parquet`
    4. `beneficiary_demographics.gold.parquet`
-- `bronze` tables maintain as close to source formatting as possible stored in the `parquet` format.
-- `gold` tables contain the final version of the data ready for downstream analysts.
+- `bronze` tables store source data in Parquet with minimal (ideally zero) modifications.
+- `gold` tables store the final version of data ready for downstream analysts.
 
 ## Bronze Tables
 
-1. Read CSV data from `./csv/` into `parquet` files within `./parquet/`.
-    - The `parquet` files should maintain the same base name as their CSV counterparts, but with the word "bronze" inserted.
+1. Read CSV data from `./csv/` into Parquet files within the `./parquet/` directory.
+    - Parquet files keep the same base name as their CSV source but with the word "bronze" inserted.
         - Example: `./csv/claims.csv` will be read into `./parquet/claims.bronze.parquet`.
-    - Maintain the same column names.
-    - Maintain as close to the raw data as possbile (don't cast values, etc)
+    - Modify data as little as possible.
+    - Keep original column names.
 
 ## Gold Tables
 
 1. Transform each column as follows:
-    - `TimestampType` should be convered to `DateType`.
-    - Numeric columns should be encoded in the smallest primitive type appropriate for the column (Short, Long, Double, etc). Reference the tables below for hints.
-    - Transcode the `gender_cd` column containing values 1, 2, and 3 to "M", "F", and "U" representing Male, Female, and Unknown, respectively. The value 1 maps to "M", 2 to "F", and 3 to "U".
-1. Write the transformed data to `parquet` and insert the word "gold".
-    - Example: `./parquet/claims.bronze.parquet` transformed would be written as `./parquet/claims.gold.parquet`.
+    - Convert `TimestampType` to `DateType`.
+    - Cast Numeric columns to the smallest type appropriate for the column (Short, Long, Float, etc). Reference the tables below for hints.
+    - Transcode `gender_cd` which contains values 1, 2, and 3 to "M", "F", and "U" representing Male, Female, and Unknown, respectively. The value 1 maps to "M", 2 to "F", and 3 to "U".
+1. Write the transformed data to disk using the Parquet format and insert the word "gold" into the name.
+    - Example: The gold version of `./parquet/claims.bronze.parquet` will be written to disk as `./parquet/claims.gold.parquet`.
 
 
 | Claims Columns | Basic Type | Largest Possible Value |
