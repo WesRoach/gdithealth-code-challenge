@@ -17,4 +17,4 @@ Using the provided DataFrames, complete the `agg_age_by_cond` function. For a gi
 | diagnosis | visit_type | age | claim_status | patients | claims |
 | --------- | ---------- | --- | ------------ | -------- | ------ |
 | URI       | ED         | 17  | P            | 1        | 1      |
-| URI       | ED         | 19  | P            | 1        | 1      |
+| URI       | ED         | 18  | P            | 1        | 1      |
