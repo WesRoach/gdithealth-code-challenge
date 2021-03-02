@@ -25,7 +25,10 @@ Example Development Environments:
 - Use Gitpod
   - Using the Gitpod development environment while the repository is Private will utilize a 30-day free trial. If you prefer to avoid activating this free trial you may clone the repository and re-upload to your Github as a public repository.
   - Add `https://gitpod.io/#` to the start of this repository url.
-  - Ex: `https://gitpod.io/#https://github.com/GDITHealth/gdithealth-code-challenge`
+  - Examples:
+    - From GDITHealth: `https://gitpod.io/#https://github.com/GDITHealth/gdithealth-code-challenge-firstName-lastName`
+      - If you try to commit, Gitpod will prompt you to fork the repository to your Github account.
+    - From a fork within your Github: `https://gitpod.io/#https://github.com/JaneDoe/gdithealth-code-challenge-jane-doe`
 
 ## Dependencies
 
