@@ -9,8 +9,8 @@ spark = spark_getOrCreate()
 # Create a DataFrame of sample healthcare claims
 # Patient ID is a unique patient identifier
 # Claim ID is a system assigned number for each claim submitted by a healthcare provider
-# Claim Status is the "P" for a paid claim or "D" for a denied claim
-# Service Date is the date of the service for the patient
+# Claim Status is "P" for a paid claim or "D" for a denied claim
+# Service Date is the date of the service for the claim
 # Diagnosis is a text category of the patient's diagnosis
 # Visit Type is "IP" for an inpatient stay, "OP" for an outpatient visit, or "ED" for
 # an emergency department visit
@@ -42,7 +42,7 @@ claims = spark.createDataFrame(
 
 # Create a DataFrame of sample patient demographics
 # Patient ID is a unique patient identifier
-# DOB is the patient's date of birth
+# Birth Date is the patient's date of birth
 # Gender is "M" for male or "F" for female
 demographic = spark.createDataFrame(
     [
@@ -59,7 +59,7 @@ demographic = spark.createDataFrame(
         ("11", date.fromisoformat("2004-03-19"), "F"),
         ("12", date.fromisoformat("2001-07-17"), "M"),
     ],
-    ["patient_id", "dob", "gender"],
+    ["patient_id", "birth_dt", "gender"],
 )
 
 
