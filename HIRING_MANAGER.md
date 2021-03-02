@@ -30,5 +30,3 @@ git push
 Within Github's UI - grant the candidate READ access ONLY to their private repository.
 
 The candidate will need to fork the repository and submit a Pull Requst with their final solution(s).
-
-Asking the candidate to Fork places the repository within their Github profile and utilizes their Gitpod credits. No candidate is required to utilize Gitpod.
