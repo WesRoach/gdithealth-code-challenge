@@ -40,10 +40,13 @@ pyspark >= 3.0.0
 java # v11+
 pytest
 
-# PySoma provides access to a pre-configured Spark Session
+# pysoma provides access to a pre-configured Spark Session
 # You -must- utilize the Spark Session available within this package
 # Exercise prompts explain how to create a Spark Session
 git+https://github.com/GDITHealth/pysoma
+# Note this is NOT pysoma from pypi.org
+# If you're installing in your own dev environment use:
+# pip install git+https://github.com/GDITHealth/pysoma
 ```
 
 ## Personal Development Environment
