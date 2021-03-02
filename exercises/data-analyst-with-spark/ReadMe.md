@@ -1,38 +1,23 @@
 # Overview
 
-## Competancies
+## PySpark Useful Links
 
-### IO
+[https://spark.apache.org/docs/latest/sql-getting-started.html](https://spark.apache.org/docs/latest/sql-getting-started.html)
 
-- Read / Write CSV
-- Read / Write Parquet
+[http://spark.apache.org/docs/latest/api/python/pyspark.sql.html](http://spark.apache.org/docs/latest/api/python/pyspark.sql.html)
 
-### DataFrame Operations
+## PySpark Session
 
-- Select
-- Rename
-- Filter
-- Join
-- GroupBy
-- Agg
-- Sort / OrderBy
+You must use the spark session returned from `spark_getOrCreate()` as follows:
 
-### Advanced Operations
+```python
+from pysoma.utils import spark_getOrCreate
 
-- Window Functions
-- Partitioning
-- Bucketing
-- UDFs
-- Transforms
+spark = spark_getOrCreate()
+```
 
-### API Driven Development
+## Jupyter
 
-- Function driven development
-- Unit Testing
+The Gitpod based environment comes with a running Jupyter server if you would like to use that system.
 
-### Concepts
-
-- Explain difference between different joins (Broadcast vs Sort-Merge-Join)
-- Why to use Partitioning
-- Bucketing Pros/Cons
-- Good/Bad practices in PySpark
+We utilize a Jupyter extension, `jupytext`, which renders plain `.py` files as Jupyer notebooks. Your final submission should avoid committing JSON files (the native storage format for Jupyter).
