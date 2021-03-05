@@ -4,7 +4,7 @@
 
 [https://spark.apache.org/docs/latest/sql-getting-started.html](https://spark.apache.org/docs/latest/sql-getting-started.html)
 
-[https://spark.apache.org/docs/3.1.1/api/python/reference/pyspark.sql.html](https://spark.apache.org/docs/3.1.1/api/python/reference/pyspark.sql.html)
+[https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql.html](https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql.html)
 
 ## PySpark Session
 
