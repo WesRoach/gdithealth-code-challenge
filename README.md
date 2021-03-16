@@ -36,7 +36,7 @@ We will run your code in an environment with the following dependencies.
 
 ```bash
 python >= 3.8
-pyspark >= 3.0.0
+pyspark >= 3.1.1
 java # v11+
 pytest
 
@@ -54,6 +54,6 @@ git+https://github.com/GDITHealth/pysoma
 Setting up the development environment yourself depends on your platform. The following are general steps.
 
 1. Use Python 3.8+
-1. `pip install pyspark>=3.0.0 black flake8 jupyter jupytext pytest git+https://github.com/GDITHealth/pysoma`
+1. `pip install pyspark>=3.1.1 black flake8 jupyter jupytext pytest git+https://github.com/GDITHealth/pysoma`
 1. Install Spark: [https://spark.apache.org/downloads.html](https://spark.apache.org/downloads.html)
 1. Verify your `JAVA_HOME` environment variable.
