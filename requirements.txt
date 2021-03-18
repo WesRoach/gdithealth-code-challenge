@@ -4,4 +4,4 @@ jupyter
 jupytext
 black
 flake8
-git+https://github.com/GDITHealth/pysoma
+dendri

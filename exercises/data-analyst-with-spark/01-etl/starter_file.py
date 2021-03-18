@@ -1,6 +1,6 @@
 from datetime import date
 
-from pysoma.utils import spark_getOrCreate
+from dendri.utils import spark_getOrCreate
 
 # You can add any module code to mod.py and import
 from mod import hello_world

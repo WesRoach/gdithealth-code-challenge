@@ -40,13 +40,10 @@ pyspark >= 3.1.1
 java # v11+
 pytest
 
-# pysoma provides access to a pre-configured Spark Session
+# dendri provides access to a pre-configured Spark Session
 # You -must- utilize the Spark Session available within this package
 # Exercise prompts explain how to create a Spark Session
-git+https://github.com/GDITHealth/pysoma
-# Note this is NOT pysoma from pypi.org
-# If you're installing in your own dev environment use:
-# pip install git+https://github.com/GDITHealth/pysoma
+dendri
 ```
 
 ## Personal Development Environment
@@ -54,6 +51,6 @@ git+https://github.com/GDITHealth/pysoma
 Setting up the development environment yourself depends on your platform. The following are general steps.
 
 1. Use Python 3.8+
-1. `pip install pyspark>=3.1.1 black flake8 jupyter jupytext pytest git+https://github.com/GDITHealth/pysoma`
+1. `pip install pyspark>=3.1.1 black flake8 jupyter jupytext pytest dendri`
 1. Install Spark: [https://spark.apache.org/downloads.html](https://spark.apache.org/downloads.html)
 1. Verify your `JAVA_HOME` environment variable.

@@ -11,7 +11,7 @@
 You must use the spark session returned from `spark_getOrCreate()` as follows:
 
 ```python
-from pysoma.utils import spark_getOrCreate
+from dendri.utils import spark_getOrCreate
 
 spark = spark_getOrCreate()
 ```

@@ -1,6 +1,6 @@
 from datetime import date
 
-from pysoma.utils import spark_getOrCreate
+from dendri.utils import spark_getOrCreate
 
 # This creates a running Spark Session
 # There is no need to create a new Spark Session
