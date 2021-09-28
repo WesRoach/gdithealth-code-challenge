@@ -24,7 +24,7 @@ Example Development Environments:
   - Examples:
     - `https://gitpod.io/#https://github.com/WesRoach/hiring-code-challenge-firstName-lastName`
       - If you try to commit, Gitpod will prompt you to fork the repository to your Github account.
-    - From a fork within your Github: `https://gitpod.io/#https://github.com/JaneDoe/gdithealth-code-challenge-jane-doe`
+    - From a fork within your Github: `https://gitpod.io/#https://github.com/JaneDoe/hiring-code-challenge-jane-doe`
 
 ## Dependencies
 
